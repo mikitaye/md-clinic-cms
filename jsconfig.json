@@ -1,8 +1,24 @@
 {
   "compilerOptions": {
-    "moduleResolution": "nodenext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "target": "ES2021",
     "checkJs": true,
-    "allowJs": true
-  }
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": [
+    "./src/**/*",
+    "./config/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".cache",
+    "build"
+  ]
 }
